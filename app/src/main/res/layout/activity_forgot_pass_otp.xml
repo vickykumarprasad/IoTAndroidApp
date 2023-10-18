@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ForgotPassOTP">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Varification"
+        android:textColor="#0277BD"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/otptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter OTP"
+        android:minHeight="48dp"
+        android:textColorHint="#455A64"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="148dp"
+        android:inputType="numberPassword"/>
+    <Button
+        android:id="@+id/otpverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Click"
+        android:textColor="#0277BD"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="326dp" />
+</LinearLayout>

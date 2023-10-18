@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/list_selector"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/icon_dash_load_list"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/if_room" />
+    <TextView
+        android:id="@+id/dash_load_name"
+        android:layout_toRightOf="@+id/icon_dash_load_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/font_large"
+        android:paddingTop="5dp"/>
+    <TextView
+        android:id="@+id/dash_load_loc"
+        android:layout_toRightOf="@+id/icon_dash_load_list"
+        android:layout_toLeftOf="@+id/switch_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_load_name"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Type"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_small"/>
+    <Switch
+        android:id="@+id/switch_status"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/spacing_tiny"
+        android:layout_centerVertical="true"
+        android:checked="true"
+        android:focusable="false"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

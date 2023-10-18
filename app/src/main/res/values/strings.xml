@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">Smart Controller</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email/Mobile</string>
+    <string name="prompt_password">Password</string>
+    <string name="ctrl_services_login">Controller Service Login</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="error_invalid_email">This email address or mobile no is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Password is incorrect</string>
+    <string name="user_not_exist">User does not exist</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="not_a_member">Register Here</string>
+    <string name="forgot_password">Forgot Password</string>
+    <!-- Strings related to Sign Up -->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="address">Address</string>
+    <string name="house_no">House/Flat Number</string>
+    <string name="street">Street Name/Number</string>
+    <string name="location">Location/Area</string>
+    <string name="city">City/District</string>
+    <string name="state">State</string>
+    <string name="country">country</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_member">Already a member? Login</string>
+    <string name="title_activity_main">Welcome User</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to side nav bar-->
+    <string name="dashboard">Dashboard</string>
+    <string name="my_home">My Home</string>
+    <string name="my_account">My Account</string>
+    <string name="quick_action">Quick Action</string>
+    <string name="automation">Automation</string>
+    <string name="associate_load">Associate Load</string>
+    <string name="loads">Loads</string>
+    <string name="logout">Logout</string>
+    <string name="house_name">House Name: </string>
+    <string name="house_name_place_holder">House Name: %1$s</string>
+    <!-- my home-->
+    <string name="home_config">Configure Home</string>
+    <string name="add_room">Add Location</string>
+    <string name="add_device">Add Devices</string>
+    <!-- settings-->
+    <string name="mqtt_server_primary">Primary Server (required)</string>
+    <string name="mqtt_server_second">Secondary Server (optional)</string>
+    <string name="mqtt_port">Port No(1883 default)</string>
+    <string name="mqtt_user">Username</string>
+    <string name="mqtt_password">Password</string>
+    <string name="mqtt_connect">Connect</string>
+    <string name="mqtt_auth_req">Authentication Required</string>
+    <string name="mqtt_disconnect">Disconnect</string>
+    <string name="mqtt_status_holder">Status: %1$s</string>
+    <string name="barcode_error_format">Error in barcode format</string>
+    <string name="device_mac_id">Device Mac ID 32 Char</string>
+    <string name="device_name">Device Name</string>
+    <!-- associate load-->
+    <string name="switch_id">Switch id 3 digit</string>
+    <!-- countries-->
+    <string-array name="room_types">
+        <item>Room</item>
+        <item>Hall</item>
+        <item>Kitchen</item>
+        <item>Bathroom</item>
+        <item>Open Space</item>
+    </string-array>
+    <!-- countries-->
+    <string-array name="countries">
+        <item>India</item>
+    </string-array>
+    <!-- load type-->
+    <string-array name="load_types">
+        <item>Select Type</item>
+        <item>Bulb</item>
+        <item>Tubelight</item>
+        <item>Fan</item>
+        <item>AC</item>
+        <item>Television</item>
+        <item>Refrigerator</item>
+        <item>Washing Machine</item>
+        <item>Mixer/Juicer</item>
+        <item>Coffee Machine</item>
+        <item>Others</item>
+    </string-array>
+    <!-- Indian states -->
+    <string-array name="india_states">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">OK</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <!-- Error Messages-->
+    <string name="error_add_device">Error in adding device, please try again</string>
+    <string name="error_associate_load">Error in associating load to device, please try again</string>
+    <string name="error_delete_load">Error in deleting load from device, please try again</string>
+    <!-- Info Messages-->
+    <string name="alert_info">Info</string>
+    <string name="info_add_device_success">Device registered successfully</string>
+    <string name="info_delete_load_success">Load deleted successfully.</string>
+    <string name="info_delete_device_success">Device deleted successfully.</string>
+    <string name="info_load_associate_success">Load %1$s associated successfully at: %2$s</string>
+    <!-- Warning Messages-->
+    <string name="warn_select_req_value">Please select all required values.</string>
+    <string name="warn_alert">Alert</string>
+    <!-- validation Messages-->
+    <string name="alert_error">Error</string>
+    <string name="error_switch_id_req">Switch id is required</string>
+    <string name="error_deleting_load">Error in deleting load, please try again.</string>
+    <string name="error_deleting_device">Error in deleting device, please try again.</string>
+    <string name="error_offline">You are offline, please connect to internet.</string>
+    <string name="error_name_req">name is required, min length 3.</string>
+    <string name="error_switch_id_already_exist">Switch id already exist</string>
+    <string name="title_activity_capture_portrait">CaptureActivityPortrait</string>
+    <string name="connect">Connect</string>
+    <string name="connect_wifi_module">Connect Wifi Module</string>
+    <string name="ssid">SSID</string>
+    <string name="passwordssId">Password</string>
+    <string name="passwordssID">password</string>
+    <string name="username">username</string>
+    <string name="pswdssid">password</string>
+    <string name="ssidwifi">SSID</string>
+    <string name="passwordwifi">Password</string>
+    <string name="connect_with_wifi_module">Connect With WiFi Module</string>
+    <string name="connectwifi">Connect</string>
+    <string name="user_name">user name</string>
+    <string name="change_password">Change Password</string>
+    <string name="reset_pass">Reset Pass</string>
+    <string name="enter_new_password">Enter New password</string>
+    <string name="confirm_password1">Confirm password</string>
+    <string name="forgot_password1">FORGOT PASSWORD</string>
+    <string name="enter_your_registered_email_to_send_your_password_reset_instruction">Enter your registered Email to send your password reset instruction</string>
+    <string name="enter_your_email_id">Enter your email id</string>
+    <string name="reset_pass1">Reset Pass</string>
+    <string name="emailLogin">Email</string>
+</resources>

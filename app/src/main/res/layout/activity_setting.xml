@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.urjalabs.smartcontroller.SettingActivity">
+
+    <!--  progress -->
+    <ProgressBar
+        android:id="@+id/connect_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+<ScrollView
+    android:id="@+id/setting_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:background="@drawable/bg_grey_radiant"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing_small">
+
+        <!--  Primary Server Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <EditText
+                android:id="@+id/input_server_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mqtt_server_primary"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Second Server Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_tiny">
+
+            <EditText
+                android:id="@+id/input_server_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mqtt_server_second"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Port no Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_tiny">
+
+            <EditText
+                android:id="@+id/input_port_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mqtt_port"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Switch
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:id="@+id/switch_auth_required"
+            android:layout_width="wrap_content"
+            android:checked="false"
+            android:hint="@string/mqtt_auth_req"
+            android:textSize="@dimen/font_large"
+            android:focusable="false"
+            android:layout_height="wrap_content"/>
+        <!-- user-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mqtt_user"
+                android:visibility="gone"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_tiny">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mqtt_password"
+                android:visibility="gone"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!-- connect Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height_normal"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:background="@color/colorGreen"
+                android:padding="@dimen/spacing_tiny"
+                android:layout_weight="1"
+                android:text="@string/mqtt_connect"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_text_size" />
+            <!-- disconnect Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height_normal"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_weight="0.9"
+                android:background="@color/colorRed"
+                android:padding="@dimen/spacing_tiny"
+                android:text="@string/mqtt_disconnect"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_text_size" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/mqtt_status"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="@dimen/spacing_tiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/mqtt_status_holder"
+            />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

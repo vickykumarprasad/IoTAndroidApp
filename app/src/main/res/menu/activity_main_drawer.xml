@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/if_dashboard"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/if_home_"
+            android:title="@string/my_home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/if_user"
+            android:title="@string/my_account" />
+    </group>
+
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/nav_link_device"
+                android:icon="@drawable/if_link"
+                android:title="@string/associate_load" />
+            <item
+                android:id="@+id/nav_automation"
+                android:icon="@drawable/if_automation"
+                android:title="@string/automation" />
+            <item
+                android:id="@+id/nav_quick_action"
+                android:icon="@drawable/if_action"
+                android:title="@string/quick_action" />
+            <item
+                android:id="@+id/nav_wifi_config"
+                android:icon="@drawable/ic_baseline_wifi_24"
+                android:title="Wifi Configuration"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/if_logout"
+                android:title="@string/logout" />
+
+
+        </menu>
+    </item>
+
+</menu>
